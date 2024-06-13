@@ -1,0 +1,1 @@
+python C:\Py_Project\project\easymap_EL_1.2\gen_el02\el02_main.py "IT_TESTING_20210407_00"

@@ -1,0 +1,30 @@
+﻿if obs > 0 :
+    errormail(obs)
+    import pymssql
+    conn = pymssql.connect(server=server, user=username, password=password, database = database)
+    cursor = conn.cursor()
+        
+    script = f"""
+    update UCS_Source
+    set F_OBS = '{obs}'
+    where Engine = 'judicial_fam' and type = '{check}'
+    """
+    cursor.execute(script)
+    conn.commit()
+    cursor.close()
+    conn.close()
+elif obs ==0 :
+    errormail(obs)
+    import pymssql
+    conn = pymssql.connect(server=server, user=username, password=password, database = database)
+    cursor = conn.cursor()
+    
+    script = f"""
+    update UCS_Source
+    set status = 'Done',F_OBS = '{obs}'
+    where Engine = 'judicial_fam' and type = '{check}'
+    """
+    cursor.execute(script)
+    conn.commit()
+    cursor.close()
+    conn.close()

@@ -1,0 +1,84 @@
+
+This file lists modules PyInstaller was not able to find. This does not
+necessarily mean this module is required for running you program. Python and
+Python 3rd-party packages include a lot of conditional or optional modules. For
+example the module 'ntpath' only exists on Windows, whereas the module
+'posixpath' only exists on Posix systems.
+
+Types if import:
+* top-level: imported at the top-level - look at these first
+* conditional: imported within an if-statement
+* delayed: imported from within a function
+* optional: imported within a try-except-statement
+
+IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
+           yourself tracking down the missing module. Thanks!
+
+missing module named 'org.python' - imported by copy (optional), xml.sax (delayed, conditional)
+missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level)
+excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), zipimport (top-level)
+missing module named urllib.getproxies_environment - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.proxy_bypass_environment - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.proxy_bypass - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.getproxies - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.urlencode - imported by urllib (conditional), requests.compat (conditional), azure.storage.blob._shared.policies (optional)
+missing module named urllib.unquote_plus - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.quote_plus - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.unquote - imported by urllib (conditional), requests.compat (conditional)
+missing module named urllib.quote - imported by urllib (conditional), requests.compat (conditional), msrest.serialization (optional)
+missing module named _posixsubprocess - imported by subprocess (optional), multiprocessing.util (delayed)
+missing module named _posixshmem - imported by multiprocessing.resource_tracker (conditional), multiprocessing.shared_memory (conditional)
+missing module named multiprocessing.set_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
+missing module named multiprocessing.get_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
+missing module named multiprocessing.get_context - imported by multiprocessing (top-level), multiprocessing.pool (top-level), multiprocessing.managers (top-level), multiprocessing.sharedctypes (top-level)
+missing module named multiprocessing.TimeoutError - imported by multiprocessing (top-level), multiprocessing.pool (top-level)
+missing module named _scproxy - imported by urllib.request (conditional)
+missing module named termios - imported by tty (top-level), getpass (optional)
+missing module named 'java.lang' - imported by platform (delayed, optional), xml.sax._exceptions (conditional)
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing (top-level), multiprocessing.connection (top-level)
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing (top-level), multiprocessing.connection (top-level)
+missing module named asyncio.DefaultEventLoopPolicy - imported by asyncio (delayed, conditional), asyncio.events (delayed, conditional)
+missing module named vms_lib - imported by platform (delayed, conditional, optional)
+missing module named java - imported by platform (delayed)
+missing module named _winreg - imported by platform (delayed, optional), requests.utils (delayed, conditional, optional)
+missing module named console - imported by pyreadline.console.ansi (conditional)
+missing module named startup - imported by pyreadline.keysyms.common (conditional), pyreadline.keysyms.keysyms (conditional)
+missing module named sets - imported by pyreadline.keysyms.common (optional)
+missing module named System - imported by pyreadline.clipboard.ironpython_clipboard (top-level), pyreadline.keysyms.ironpython_keysyms (top-level), pyreadline.console.ironpython_console (top-level), pyreadline.rlmain (conditional)
+missing module named StringIO - imported by pyreadline.py3k_compat (conditional), six (conditional), urllib3.packages.six (conditional), requests.compat (conditional)
+missing module named IronPythonConsole - imported by pyreadline.console.ironpython_console (top-level)
+missing module named clr - imported by pyreadline.clipboard.ironpython_clipboard (top-level), pyreadline.console.ironpython_console (top-level)
+missing module named org - imported by pickle (optional)
+missing module named posix - imported by os (conditional, optional), shutil (conditional)
+missing module named resource - imported by posix (top-level), test.support (optional)
+missing module named grp - imported by shutil (optional), tarfile (optional), pathlib (delayed)
+missing module named pwd - imported by posixpath (delayed, conditional), shutil (optional), tarfile (optional), pathlib (delayed, conditional, optional), http.server (delayed, optional), webbrowser (delayed), netrc (delayed, conditional), getpass (delayed), distutils.util (delayed, conditional, optional)
+missing module named pyimod03_importers - imported by C:\ProgramData\Anaconda3\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pkgutil.py (top-level)
+runtime module named six.moves - imported by http.client (top-level), cryptography.hazmat.backends.openssl.backend (top-level), cryptography.x509.general_name (top-level), azure.core.pipeline.policies._distributed_tracing (top-level), azure.core.pipeline.policies._universal (top-level)
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib' (top-level)
+missing module named six.moves.range - imported by six.moves (top-level), cryptography.hazmat.backends.openssl.backend (top-level)
+missing module named 'backports.ssl_match_hostname' - imported by urllib3.packages.ssl_match_hostname (optional)
+missing module named cryptography.x509.UnsupportedExtension - imported by cryptography.x509 (optional), urllib3.contrib.pyopenssl (optional)
+missing module named Queue - imported by urllib3.util.queue (conditional)
+missing module named "'urllib3.packages.six.moves.urllib'.parse" - imported by urllib3.request (top-level), urllib3.poolmanager (top-level)
+runtime module named urllib3.packages.six.moves - imported by http.client (top-level), urllib3.connectionpool (top-level), urllib3.util.response (top-level), 'urllib3.packages.six.moves.urllib' (top-level), urllib3.response (top-level), urllib3.util.queue (top-level)
+missing module named _dummy_threading - imported by dummy_threading (optional)
+missing module named 'typing.io' - imported by importlib.resources (top-level)
+missing module named Cookie - imported by requests.compat (conditional)
+missing module named cookielib - imported by requests.compat (conditional)
+missing module named urllib2 - imported by azure.storage.blob._blob_client (optional), requests.compat (conditional), azure.storage.blob._shared (optional), azure.storage.blob._shared.base_client (optional), azure.storage.blob._shared.authentication (optional), azure.storage.blob._serialize (optional), azure.storage.blob._container_client (optional)
+missing module named simplejson - imported by requests.compat (optional)
+missing module named trio - imported by azure.core.rest._requests_trio (top-level), azure.core.pipeline.transport._requests_trio (top-level)
+missing module named aiohttp - imported by azure.core.pipeline.transport._aiohttp (top-level), msrest.universal_http.aiohttp (top-level)
+missing module named cchardet - imported by azure.core.pipeline.transport._aiohttp (optional)
+missing module named multidict - imported by azure.core.utils._utils (delayed, optional), azure.core.rest._aiohttp (top-level), azure.core.pipeline.transport._aiohttp (top-level), msrest.universal_http.aiohttp (top-level)
+missing module named 'azure.core.tracing.ext.opencensus_span' - imported by azure.core.settings (delayed, conditional, optional)
+missing module named urlparse - imported by azure.storage.blob._blob_client (optional), azure.core.pipeline.transport._base (optional), requests.compat (conditional), azure.core.rest._helpers (optional), azure.core.pipeline.policies._redirect (optional), azure.storage.blob._shared.base_client (optional), msrest.pipeline (optional), msrest.universal_http (optional), msrest.service_client (optional), requests_oauthlib.oauth1_session (optional), azure.storage.blob._shared.authentication (optional), azure.storage.blob._shared.policies (optional), azure.storage.blob._container_client (optional), azure.storage.blob._blob_service_client (optional)
+missing module named _patch - imported by azure.storage.blob._generated (optional)
+missing module named ConfigParser - imported by msrest.configuration (optional), msrest.pipeline (optional), msrest.universal_http (optional), msrest.universal_http.requests (optional)
+missing module named jwt - imported by oauthlib.common (delayed), oauthlib.oauth2.rfc6749.clients.service_application (delayed)
+missing module named blinker - imported by oauthlib.signals (optional)
+missing module named requests_kerberos - imported by msrest.authentication (delayed, optional)
+missing module named 'jwt.algorithms' - imported by oauthlib.oauth1.rfc5849.signature (delayed, conditional)
+missing module named yarl - imported by azure.storage.blob._shared.authentication (optional)
+missing module named _uuid - imported by uuid (optional)

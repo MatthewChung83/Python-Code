@@ -1,0 +1,6 @@
+Scrapy==2.4.1
+pdfplumber==0.5.25
+python-dateutil==2.8.1
+pyodbc==4.0.30
+pandas==1.2.1
+pymssql
